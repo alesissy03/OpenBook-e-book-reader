@@ -48,4 +48,31 @@
 | W25Q512JVEIQ                 | Flash Memory                                                                                           |              | 1        | https://mou.sr/42vsB6J     |
 | XC6220A331MR-G               | LDO Voltage Regulator                                                                                 |              | 1        | https://mou.sr/4ieKgVa     |
 
+# ESP32 C6
+EN: RESET
+IO0: INT_RTC
+IO1: 32KHZ
+IO2: MISO
+IO3: EPD_BUSY
+IO4: SS_SD
+IO5: EPD_DE
+IO6: SCK
+IO7: MOSI
+IO8: 3V3
+IO9: IO/BOOT
+NC: X
+IO10: EPD_CS
+IO11: FLASH_CS
+IO12: USB_D-
+IO13: USB_D+
+IO15: IO/CHANGE
+TXD0/GPIO16: TX
+RXD0/GPIO17: RX
+IO18: RTC_RST
+IO19: I2C_PW
+IO20: EPD_3V3_C
+IO21: SDA
+IO22: SCL
+IO23: EPD_RST
+GND: GND
 Disclaimer: This project was done using Fusion in browser.
