@@ -47,3 +47,5 @@
 | USBLC6-2SC6Y                 | ESD Protection Diode Array, 6-Pin SOT-23                                                              |              | 1        | https://mou.sr/42lyiTK     |
 | W25Q512JVEIQ                 | Flash Memory                                                                                           |              | 1        | https://mou.sr/42vsB6J     |
 | XC6220A331MR-G               | LDO Voltage Regulator                                                                                 |              | 1        | https://mou.sr/4ieKgVa     |
+
+Disclaimer: This project was done using Fusion in browser.
