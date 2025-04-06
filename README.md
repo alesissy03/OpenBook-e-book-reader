@@ -50,32 +50,34 @@
 
 # ESP32 C6
 
-EN: RESET  
-IO0: INT_RTC  
-IO1: 32KHZ  
-IO2: MISO  
-IO3: EPD_BUSY  
-IO4: SS_SD  
-IO5: EPD_DE  
-IO6: SCK  
-IO7: MOSI  
-IO8: 3V3  
-IO9: IO/BOOT  
-NC: X  
-IO10: EPD_CS  
-IO11: FLASH_CS  
-IO12: USB_D-  
-IO13: USB_D+  
-IO15: IO/CHANGE  
-TXD0/GPIO16: TX  
-RXD0/GPIO17: RX  
-IO18: RTC_RST  
-IO19: I2C_PW  
-IO20: EPD_3V3_C  
-IO21: SDA  
-IO22: SCL  
-IO23: EPD_RST  
-GND: GND  
+### Buttons  
+EN (pin 3): RESET  
+IO9 (pin 15): IO/BOOT   
+
+### Battery Level
+IO22 (pin 20): SCL
+IO21 (pin 19): SDA   
+
+### USB-C Connector & ESD Protection
+IO12 (pin 13): USB_D-
+IO13 (pin 14): USB_D+  
+
+### SD Card 
+IO4 (pin 4): SS_SD
+IO6 (pin 6): SCK
+IO7 (pin 7): MOSI
+IO2 (pin 27): MISO  
+
+### BME688 Sensor
+IO19 (pin 17): I2C_PW
+IO21 (pin 19): SD
+IO22 (pin 20): SCL    
+
+### RTC Module DS3231SN
+IO0 (pin 8): INT_RTC
+IO1 (pin 9): 32KHZ
+IO18 (pin 16): RTC_RST
+IO21 (pin 19): SDA
+IO22 (pin 20): SCL   
 
 _Disclaimer: This project was done using Fusion in browser._
-
