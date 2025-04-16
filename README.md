@@ -2,9 +2,9 @@
 
 ![image](https://github.com/user-attachments/assets/9bbbaf0a-def0-4646-a5ea-911b73e33ba6)
 
-# Project Structure/
+# Project Structure
 ```
-E-Reader-Project/
+OpenBook E-Reader
 ├── Hardware
 │ ├── E-Reader.sch # Schematic file
 │ └── E-Reader.brd # PCB layout file
