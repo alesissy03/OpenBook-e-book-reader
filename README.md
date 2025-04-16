@@ -3,7 +3,26 @@
 ![image](https://github.com/user-attachments/assets/9bbbaf0a-def0-4646-a5ea-911b73e33ba6)
 
 # Project Structure/
-<pre> ```plaintext E-Reader-Project/ ├── Hardware │ ├── E-Reader.sch # Schematic file │ └── E-Reader.brd # PCB layout file ├── Manufacturing │ ├── gerbers.zip # Gerber files for fabrication │ ├── bom.csv # Bill of materials │ └── pap.csv # Pick-and-place file ├── Mechanical │ ├── E-Reader.zip # STEP model archive │ ├── E-Reader.f3z # Fusion 360 assembly file │ └── OpenBook Enclosure.f3d # Enclosure model ├── Images │ ├── 3d.png # 3D PCB render │ ├── Schematic.png # Screenshot of schematic │ ├── Board.png # Screenshot of board layout │ └── Board_in_box.png # Board inside enclosure └── README.md # Project documentation ``` </pre>
+```
+E-Reader-Project/
+├── Hardware
+│ ├── E-Reader.sch # Schematic file
+│ └── E-Reader.brd # PCB layout file
+├── Manufacturing
+│ ├── gerbers.zip # Gerber files for fabrication
+│ ├── bom.csv # Bill of materials
+│ └── pap.csv # Pick-and-place file
+├── Mechanical
+│ ├── E-Reader.zip # STEP model archive
+│ ├── E-Reader.f3z # Fusion 360 assembly file
+│ └── OpenBook Enclosure.f3d # Enclosure model
+├── Images
+│ ├── 3d.png # 3D PCB render
+│ ├── Schematic.png # Screenshot of schematic
+│ ├── Board.png # Screenshot of board layout
+│ └── Board_in_box.png # Board inside enclosure
+└── README.md # Project documentation
+```
 
 # Bill of Materials
 
