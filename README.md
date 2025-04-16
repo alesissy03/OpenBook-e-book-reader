@@ -77,9 +77,20 @@
 
 ### USB-C Connector & ESD Protection  
 - IO12 (pin 13): USB_D-  
-- IO13 (pin 14): USB_D+  
+- IO13 (pin 14): USB_D+
+
+# Errors and warnings
+During the design process in Autodesk Fusion, several warnings were flagged in both the schematic and PCB layouts. Below is a summary of the warnings I reviewed and explicitly approved based on the context of this project:
+
+## Schematic
+### "POWER pin X connected to Y" Warnings
+- VBAT is supplied via a battery circuit
+- 3V3 is regulated by a dedicated LDO
+- I2C_PW and other power rails are driven by appropriate sources
+- All GND connections are correctly tied to a common ground plane
+- POWER pin U3 VBAT connected to VRTC is intentional, VRTC is your battery backup supply for the RTC
+- POWER pin SENSOR2 VDDIO connected to I2C_PW / POWER pin SENSOR2 VDD connected to I2C_PW: these refer to the BME680 sensor (SENSOR2), which uses VDD for logic and VDDIO for I/O voltage levels
+- POWER pin MCP73831 VIN connected to VBUS: the MCP73831 is a Li-Ion battery charger, and VIN is supposed to be connected to a power input, like USB VBUS
+
 
 _Disclaimer: This project was done using Fusion in browser._
-
-_I was not able to import DRC (.dru) file._
-![image](https://github.com/user-attachments/assets/61e9edff-73e2-4e78-9cfa-8bb1c05a8d7e)
