@@ -2,6 +2,25 @@
 
 ![image](https://github.com/user-attachments/assets/9bbbaf0a-def0-4646-a5ea-911b73e33ba6)
 
+# Project Structure
+├── Hardware
+│   ├── E-Reader.sch
+│   └── E-Reader.brd
+├── Manufacturing
+│   ├── gerbers.zip
+│   ├── bom.csv
+│   └── pap.csv
+├── Mechanical
+│   ├── E-Reader.zip  # .zip of .stp
+|   ├── E-Reader.f3z
+│   └── OpenBook Enclosure.f3d
+├── Images
+│   ├── 3d.png
+|   ├── Schematic.png
+|   ├── Board.png
+│   └── Board_in_box.png
+└── README.md
+
 # Bill of Materials
 
 ## Component List
