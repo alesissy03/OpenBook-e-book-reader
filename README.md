@@ -88,7 +88,7 @@ OpenBook E-Reader
 | 12 | IO11 | FLASH_CS | Exernal NOR Flash Chip Select | J4 |
 | 13 | IO12 | USB_D- | USB D- | J2 via D2 |
 | 14 | IO13 | USB_D+ | USB D+ | J2 via D2 |
-| 15 | IO9 | IO/BOOT | BOOT button |
+| 15 | IO9 | IO/BOOT | BOOT button | BOOT button
 | 16 | IO18 | RTC_RST | RTC Module Reset | DS3231SN |
 | 17 | IO19 | I2C_PW | Power | 3.3V |
 | 18 | IO20 | EPD_3V3_C | E-Paper Display Power | 
@@ -96,7 +96,7 @@ OpenBook E-Reader
 | 20 | IO22 | SCL |
 | 21 | IO23 | EPD_RST | E-Paper Display Reset | J4
 | 22 | NC | - | -
-| 23 | IO15 | IO/CHANGE | User button
+| 23 | IO15 | IO/CHANGE | Change button | Change Button
 | 24 | RXD0/GPIO17 | RX | UART EX
 | 25 | TXD0/GPIO16 | TX | UART TX
 | 26 | IO3 | EPD_BUSY | E-Paper Display Busy signal | J4
