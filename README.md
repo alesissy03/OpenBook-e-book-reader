@@ -82,7 +82,7 @@
 # Errors and warnings
 During the design process in Autodesk Fusion, several warnings were flagged in both the schematic and PCB layouts. Below is a summary of the warnings I reviewed and explicitly approved based on the context of this project:
 
-## Schematic
+## Schematic (only warnings, no errors)
 ### "POWER pin X connected to Y" Warnings
 - VBAT is supplied via a battery circuit
 - 3V3 is regulated by a dedicated LDO
@@ -91,6 +91,12 @@ During the design process in Autodesk Fusion, several warnings were flagged in b
 - POWER pin U3 VBAT connected to VRTC is intentional, VRTC is your battery backup supply for the RTC
 - POWER pin SENSOR2 VDDIO connected to I2C_PW / POWER pin SENSOR2 VDD connected to I2C_PW: these refer to the BME680 sensor (SENSOR2), which uses VDD for logic and VDDIO for I/O voltage levels
 - POWER pin MCP73831 VIN connected to VBUS: the MCP73831 is a Li-Ion battery charger, and VIN is supposed to be connected to a power input, like USB VBUS
+### "Part X has no value" Warnings
+- Those parts are supposed not to have value (for example the frame)
+
+## Board
+- Smd-Hole, Board Outline-Clearance error (at USB C connector): ok to approved as per instructions given
+- Copper width errors (1 data wire, 3 power wires): approved because I manually checked the wire and it has the desired width
 
 
 _Disclaimer: This project was done using Fusion in browser._
