@@ -83,6 +83,3 @@ _Disclaimer: This project was done using Fusion in browser._
 
 _I was not able to import DRC (.dru) file._
 ![image](https://github.com/user-attachments/assets/61e9edff-73e2-4e78-9cfa-8bb1c05a8d7e)
-
-
-make the bom as a nice table
