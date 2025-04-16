@@ -95,12 +95,12 @@ OpenBook E-Reader
 | 19 | IO21 | SDA |
 | 20 | IO22 | SCL |
 | 21 | IO23 | EPD_RST | E-Paper Display Reset | J4
-| 22 | NC | - | -
+| 22 | NC | - | - | -
 | 23 | IO15 | IO/CHANGE | Change button | Change Button
 | 24 | RXD0/GPIO17 | RX | UART EX
 | 25 | TXD0/GPIO16 | TX | UART TX
 | 26 | IO3 | EPD_BUSY | E-Paper Display Busy signal | J4
-| 27 | IO2 | MISO | Master In Slave Out
+| 27 | IO2 | MISO | Master In Slave Out | J3, J4
 
 | IO3	RESET	SW2, IC5
 IO5	GPIO	J4 (EPD_DC)
