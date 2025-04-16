@@ -6,22 +6,23 @@
 ```
 OpenBook E-Reader
 ├── Hardware
-│ ├── E-Reader.sch # Schematic file
-│ └── E-Reader.brd # PCB layout file
+│ ├── E-Reader.sch
+│ └── E-Reader.brd
 ├── Manufacturing
-│ ├── gerbers.zip # Gerber files for fabrication
-│ ├── bom.csv # Bill of materials
-│ └── pap.csv # Pick-and-place file
+│ ├── gerbers.zip
+│ ├── bom.csv
+│ └── pap.csv
 ├── Mechanical
 │ ├── E-Reader.zip # STEP model archive
-│ ├── E-Reader.f3z # Fusion 360 assembly file
+│ ├── E-Reader.f3z
 │ └── OpenBook Enclosure.f3d # Enclosure model
 ├── Images
-│ ├── 3d.png # 3D PCB render
-│ ├── Schematic.png # Screenshot of schematic
-│ ├── Board.png # Screenshot of board layout
-│ └── Board_in_box.png # Board inside enclosure
-└── README.md # Project documentation
+│ ├── 3d.png
+│ ├── Schematic.png
+│ ├── Board.png
+│ └── Board_in_box.png
+├── LICENSE # Apache 2.0
+└── README.md
 ```
 
 # Bill of Materials
@@ -70,6 +71,57 @@ OpenBook E-Reader
 | XC6220A331MR-G               | LDO Voltage Regulator                                             |              | 1        | https://mou.sr/4ieKgVa     | https://ro.mouser.com/ProductDetail/Torex-Semiconductor/XC6220A331MR-G?qs=AsjdqWjXhJ8ZSWznL1J0gg%3D%3D |
 
 # ESP32 C6
+
+| Pin        | Name | Label|  Function             | Connection to  |
+|------------|-------|----------|----------------------|----------------|
+| 1 | GND | - | Ground | Ground |
+| 2 | 3V3 | - | Power | 3.3V |
+| 3 | EN | RESET |Reset | Pull-up to 3.3v |
+| 4 | IO4 | SS_SD | SD card chip select | SD Card |
+| 5 | IO5 | EPD_DC | E-Paper Display Command | J4 |
+| 6 | IO6 | SCK | SPI Clock | J3, J4 |
+| 7 | IO7 | MOSI | Master Out Slave In | J3, J4 |
+| 8 | IO0 | INT_RTC | RTC Interrupt | DS3231SN |
+| 9 | IO1 | 32KHZ | 32 kHz output |
+| 10 | IO8 | - | Power | 3.3V |
+| 11 | IO10 | EPD_CS | E-Paper Display Chip Select | J3 |
+| 12 | IO11 | FLASH_CS | Exernal NOR Flash Chip Select | J4 |
+| 13 | IO12 | USB_D- | USB D- | J2 via D2 |
+| 14 | IO13 | USB_D+ | USB D+ | J2 via D2 |
+| 15 | IO9 | IO/BOOT | BOOT button |
+| 16 | IO18 | RTC_RST | RTC Module Reset | DS3231SN |
+| 17 | IO19 | I2C_PW | Power | 3.3V |
+| 18 | IO20 | EPD_3V3_C | E-Paper Display Power | 
+| 19 | IO21 | SDA |
+| 20 | IO22 | SCL |
+| 21 | IO23 | EPD_RST | E-Paper Display Reset | J4
+| 22 | NC | - | -
+| 23 | IO15 | IO/CHANGE | User button
+| 24 | RXD0/GPIO17 | RX | UART EX
+| 25 | TXD0/GPIO16 | TX | UART TX
+| 26 | IO3 | EPD_BUSY | E-Paper Display Busy signal | J4
+| 27 | IO2 | MISO | Master In Slave Out
+
+| IO3	RESET	SW2, IC5
+IO5	GPIO	J4 (EPD_DC)
+IO6	SPI SCK	J4 (EPD_SCK), J3 (SD_CLK)
+IO7	SPI MOSI	J4 (EPD_DIN), J3 (SD_DI)
+IO8	BOOT	SW1 (Buton Boot)
+IO10	GPIO / SPI CS	J3 (SD_CS)
+IO11	GPIO / SPI CS	J4 (EPD_CS)
+IO13	USB D-	J2 (USB-C D-) via D2
+IO14	USB D+	J2 (USB-C D+) via D2
+IO19	I2C SDA	IC2 (RTC SDA), IC3 (BME SDA/SDO)
+IO20	I2C SCL	IC2 (RTC SCL), IC3 (BME SCL/SCK)
+IO21	GPIO	J4 (EPD_RST)
+IO26	GPIO	J4 (EPD_BUSY)
+IO27	SPI MISO	J4 (EPD_DOUT), J3 (SD_DO)
+EN	Enable	Pull-up la 3.3V
+VDD	Power	3.3V
+GND	Ground	Ground
+IO12	Neutilizat	-
+IO24	Neutilizat	-
+IO25	Neutilizat	-
 
 ### Battery Level
 - IO21 (pin 19): SDA  
