@@ -2,7 +2,7 @@
 
 ![image](https://github.com/user-attachments/assets/9bbbaf0a-def0-4646-a5ea-911b73e33ba6)
 
-# Project Structure
+# Project Structure/
 ├── Hardware
 │   ├── E-Reader.sch
 │   └── E-Reader.brd
